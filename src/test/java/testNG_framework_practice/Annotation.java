@@ -30,7 +30,7 @@ public class Annotation {
 		if(driver != null) {
 		driver.quit();
 		}
-		System.out.println("Closing Browser");
+		System.out.println("Closing Browser and ending the process");
 		
 	}
 	
