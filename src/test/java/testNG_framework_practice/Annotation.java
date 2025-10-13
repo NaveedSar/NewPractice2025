@@ -1,6 +1,5 @@
 package testNG_framework_practice;
 import java.time.Duration;
-import org.testng.TestNG;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -42,6 +41,7 @@ public class Annotation {
 		String expectedTitle = "Google";
 		System.out.println(actualTitle);
 		Assert.assertEquals(actualTitle, expectedTitle);
+		System.out.println("Tetsing is successfull");
 	}
 	
 	
