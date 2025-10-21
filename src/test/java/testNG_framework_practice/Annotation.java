@@ -49,6 +49,7 @@ public class Annotation {
 	public void logout () {
 		
 		System.out.println("Log out successfull");
+		System.out.println("Log out successfull 2");
 		
 	}
 
