@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class Annotation {
 	
@@ -44,6 +45,11 @@ public class Annotation {
 		System.out.println("Tetsing is successfull");
 	}
 	
-	
+	@Test (description = "log out validation")
+	public void logout () {
+		
+		System.out.println("Log out successfull");
+		
+	}
 
 }
