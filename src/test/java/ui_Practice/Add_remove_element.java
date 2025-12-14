@@ -30,7 +30,7 @@ public class Add_remove_element {
 		WebElement removeElement = driver.findElement(By.xpath("//button[text()='Delete']"));
 		removeElement.click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		String actualTitle = driver.findElement(By.xpath("//h3[text()='Add/Remove Elements']")).getText();
 		String expectedTitle = "Add/Remove Elements";
@@ -44,6 +44,7 @@ public class Add_remove_element {
 		
 		System.out.println("Title text result is : " + actualTitle.equals(expectedTitle));
 		driver.quit();
+		System.out.println("The test is successfull!");
 	}
 	
 	public static void windowHandlers(WebDriver driver) {
