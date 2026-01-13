@@ -46,6 +46,7 @@ public class Add_remove_element {
 		driver.quit();
 		System.out.println("The test is successfull!");
 		System.out.println("Second assert is pass!!");
+		System.out.println("This is the the third assertion!!");
 	}
 	
 	public static void windowHandlers(WebDriver driver) {
