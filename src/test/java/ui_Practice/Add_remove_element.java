@@ -1,6 +1,8 @@
 package ui_Practice;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 import java.util.Iterator;
 import org.openqa.selenium.By;
@@ -14,8 +16,24 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Add_remove_element {
 
 	public static void main (String []args) throws InterruptedException {
-		
-		
+
+
+		List<String> payments = new ArrayList<>();
+
+		payments.add("John");
+		payments.add("Smith");
+		payments.add("Teacher");
+
+
+
+
+		for (int i=0; i<payments.size();i++){
+
+			String currentPayment = payments.get(i+1);
+		}
+
+
+
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/");
@@ -27,6 +45,7 @@ public class Add_remove_element {
 		
 		WebElement addElement = driver.findElement(By.xpath("//button[text()='Add Element']"));
 		addElement.click();
+
 		WebElement removeElement = driver.findElement(By.xpath("//button[text()='Delete']"));
 		removeElement.click();
 		
